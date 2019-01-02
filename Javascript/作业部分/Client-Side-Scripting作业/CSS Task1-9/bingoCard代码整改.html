@@ -1,0 +1,42 @@
+<script>
+var i;
+var myarr=["square0","square1","square2","square3","square4",
+"square5","square6","square7","square8","square9",
+"square10","square11","square12","square13","square14",
+"square15","square16","square17","square18","square19",
+"square20","square21","square22","square23"];
+
+var myGenerate{
+	
+	generateNonRepeat:function(int elementId,int baseNumber){
+	for(i=elementId;i<elementId+5;i++){
+	var flag=true;
+    var randomNum;
+    randomNum=baseNumber+Math.floor(Math.random()*15)+1 ;
+    for(p=0;p<nonDuplicateArr.length&&flag;p++)  
+	{
+	if(nonDuplicateArr[p]==randomNum)
+	    {flag=false;}
+	}
+    if(flag==true)
+	{nonDuplicateArr.push(randomNum);
+	 document.getElementById(myarr[i]).innerHTML =randomNum;}
+    else
+    	{nonDuplicateArr.push("          ");
+	 document.getElementById(myarr[i]).innerHTML ="          ";}
+	}
+	for(i=0;i<myarr.length;i++){
+	document.getElementById(myarr[i]).style.color="black"; 
+	}
+	
+	}
+	
+	}
+	
+	
+
+
+
+
+
+</script>

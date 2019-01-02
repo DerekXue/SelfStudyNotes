@@ -1,0 +1,42 @@
+import java.util.HashMap;
+import java.util.Map;
+
+	public class contract{
+		private String address_deployer;
+		private double balance;
+		
+		public contract(String address_deployer) {
+			this.address_deployer=address_deployer;
+		}
+		
+		public void addCoin(double amount) {	
+				this.balance+=amount;
+		}
+		
+		public void giveCoin(String receiver_addr,contract receiver,double amount) {
+			if(amount<this.balance&&receiver_addr!=null)
+			if(receiver.address_deployer==receiver_addr)
+				{this.balance-=amount;
+				receiver.balance+=amount;
+				System.out.println("coin sent");
+				}
+			else{System.out.println("invalid info");}
+		}
+		
+		public void viewCoin() {
+			System.out.println("amount is "+this.balance);
+		}
+	
+	
+	public static void main(String args[]) {
+		
+		contract xue=new contract("19950708");
+		xue.addCoin(10000);
+		contract hai=new contract("19940708");
+		xue.giveCoin("19940708", hai, 1000);
+		xue.viewCoin();
+		hai.viewCoin();
+	}
+	
+	
+	}

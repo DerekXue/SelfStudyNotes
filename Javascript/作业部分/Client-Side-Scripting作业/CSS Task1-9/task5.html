@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+    <title></title> 
+     <link rel="stylesheet" type="text/css" href="Style/demo.css" /> 
+   <script type="text/javascript">        
+     var demo = document.getElementById("demo");  // why this global var doesn't work
+     window.onload = init; 
+     function init() {document.getElementById("s1").onclick = part1;            
+                      document.getElementById("s2").onclick = part2;            
+                      document.getElementById("s3").onclick = part3; 
+                      document.getElementById("s4").onclick=part4;
+} 
+     
+       function part1() {            
+           demo.innerHTML=  "It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. "; 
+       } 
+ 
+function part2() {            
+           demo.innerHTML = "During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the Death Star, an armoured space station with enough power to destroy an entire planet."; 
+       } 
+ 
+       function part3() {             
+           demo.innerHTML = "Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...."; 
+       } 
+ 
+     function part4(){
+        demo.innerHTML = "A long time ago, in a galaxy far, far away.. "; 
+     }
+    </script> 
+</head> 
+<body> 
+    <div id="demo"> 
+        random message
+    </div> 
+    <ul> 
+      <li><span id ="s1">Part 1</span></li> 
+      <li><span id="s2">Part 2</span></li> 
+      <li><span id="s3">Part 3</span></li> 
+      <li><span id="s4">Reset</span></li> 
+</ul> 
+</body> 
+</html> 

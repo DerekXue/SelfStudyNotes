@@ -1,0 +1,29 @@
+E:\Visual Studio C# files\图书管理系统\图书管理系统\bin\Debug\图书管理系统.exe.config
+E:\Visual Studio C# files\图书管理系统\图书管理系统\bin\Debug\图书管理系统.exe
+E:\Visual Studio C# files\图书管理系统\图书管理系统\bin\Debug\图书管理系统.pdb
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.csprojResolveAssemblyReference.cache
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Login.resources
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Properties.Resources.resources
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.csproj.GenerateResource.Cache
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.exe
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.pdb
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.LMS.resources
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Role.resources
+E:\Visual Studio C# files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Profile.resources
+E:\Visual Studio C files\图书管理系统\图书管理系统\bin\Debug\图书管理系统.exe.config
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.exe
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.pdb
+E:\Visual Studio C files\图书管理系统\图书管理系统\bin\Debug\图书管理系统.exe
+E:\Visual Studio C files\图书管理系统\图书管理系统\bin\Debug\图书管理系统.pdb
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.csprojResolveAssemblyReference.cache
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.LMS.resources
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Login.resources
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Profile.resources
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Properties.Resources.resources
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Role.resources
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.csproj.GenerateResource.Cache
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Change_Password.resources
+E:\Visual Studio C files\图书管理系统\图书管理系统\obj\Debug\图书管理系统.Section.resources
+C:\Users\Alienware\Desktop\屌丝就要多读书\C#和.Net\图书管理系统\图书管理系统\bin\Debug\图书管理系统.exe.config
+C:\Users\Alienware\Desktop\屌丝就要多读书\C#和.Net\图书管理系统\图书管理系统\obj\Debug\图书管理系统.exe
+C:\Users\Alienware\Desktop\屌丝就要多读书\C#和.Net\图书管理系统\图书管理系统\obj\Debug\图书管理系统.pdb

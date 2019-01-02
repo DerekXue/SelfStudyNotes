@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+<title>Please Comment</title>
+<style>
+body {
+}
+ul
+{
+list-style-type:none;
+margin:30px,0,0,0;
+padding:0,0,0,0;
+}
+li
+{
+display:inline;
+padding-left:25px;
+padding-right:25px;
+}
+#demo {
+position:relative;
+top:10px;
+left:100px;
+width:100px;
+height:200px;
+background-color:#0094ff;
+}
+</style>
+<script type="text/javascript">
+<head>
+<title>Please Comment</title>
+<style>
+body {
+}
+ul
+{
+list-style-type:none;
+margin:30px,0,0,0;
+padding:0,0,0,0;
+}
+li
+{
+display:inline;
+padding-left:25px;
+padding-right:25px;
+}
+#demo {
+position:relative;
+top:10px;
+left:100px;
+width:100px;
+height:200px;
+background-color:#0094ff;
+}
+</style>
+<script type="text/javascript">
+window.onload = initiall;  //initial function is avaliable upon loading
+function initiall() {
+document.getElementById("siz").onmouseover = changesizeover;
+document.getElementById("siz").onmouseout = OriginalStyle;
+document.getElementById("col").onmouseover = changeColorOver;
+document.getElementById("col").onmouseout = OriginalStyle;
+document.getElementById("vis").onmouseover = changeVisOver;
+document.getElementById("vis").onmouseout = OriginalStyle;
+}
+
+  function OriginalStyle(){
+document.getElementById("demo").style.width = "100px";
+document.getElementById("demo").style.backgroundColor  = "#0094ff";
+document.getElementById("demo").style.visibility = "visible";
+  }
+  
+function changesizeover() {
+document.getElementById("demo").style.width = "50px";
+document.getElementById("demo").style.backgroundColor  = "#0094ff";
+}
+
+function changeColorOver(){
+  document.getElementById("demo").style.width ="150px";
+  document.getElementById("demo").style.backgroundColor  = "pink";
+}
+ 
+  function changeVisOver(){
+    document.getElementById("demo").style.visibility = "hidden";
+  }
+  
+  
+</script>
+</head>
+<body>
+<div id="demo">
+JS and CCS DEMO
+</div>
+<ul>
+<li><span id ="col">colour</span></li>
+<li><span id="siz">size</span></li>
+<li><span id="vis">visibility</span></li>
+<li><span id="pos">CLICK position</span></li>
+</ul>
+</body>
+</html>

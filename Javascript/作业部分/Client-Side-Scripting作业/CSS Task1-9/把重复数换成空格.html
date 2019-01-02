@@ -1,0 +1,146 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+</script>
+	<title>Single Random Number</title>
+</head>
+<body>
+<h1>Single Random Number Bingo Card</h1>
+<table>
+<thead>
+	<tr>
+		<th>B</th>
+		<th>I</th>
+		<th>N</th>
+		<th>G</th>
+		<th>O</th>
+	</tr>
+</thead>
+<tbody id="wholearea">
+	<tr>
+		<td id="square0" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square5" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square10" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square14" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square19" onclick="colorToggle(id)">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="square1" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square6" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square11" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square15" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square20" onclick="colorToggle(id)">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="square2" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square7" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="free">Free</td>
+		<td id="square16" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square21" onclick="colorToggle(id)">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="square3" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square8" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square12" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square17" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square22" onclick="colorToggle(id)">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="square4" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square9" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square13" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square18" onclick="colorToggle(id)">&nbsp;</td>
+		<td id="square23" onclick="colorToggle(id)">&nbsp;</td>
+	</tr>
+</tbody>
+</table>
+
+ <BUTTON onclick="generate()">Generate</BUTTON>
+ <BUTTON onclick="reload()">Reload</BUTTON>
+
+<script>
+
+var i;
+var myarr=["square0","square1","square2","square3","square4",
+"square5","square6","square7","square8","square9",
+"square10","square11","square12","square13","square14",
+"square15","square16","square17","square18","square19",
+"square20","square21","square22","square23"];
+
+
+
+
+function generate(){		<!-- Generate Random Number-->
+
+var nonDuplicateArr=[];
+
+for(i=0;i<5;i++){
+	
+    var flag=true;
+    var randomNum;
+
+    randomNum=Math.floor(Math.random()*15)+1 ;
+    
+    for(p=0;p<nonDuplicateArr.length&&flag;p++)  
+	{
+	if(nonDuplicateArr[p]==randomNum)
+	    {flag=false;}
+	
+	}
+
+    if(flag==true)
+	{nonDuplicateArr.push(randomNum);
+	 document.getElementById(myarr[i]).innerHTML =randomNum;}
+    else
+    	{nonDuplicateArr.push("          ");
+	 document.getElementById(myarr[i]).innerHTML ="          ";}
+}
+    
+	
+for(i=5;i<10;i++){
+    document.getElementById(myarr[i]).innerHTML = 15+Math.floor(Math.random()*15)+1 ;
+	}
+for(i=10;i<14;i++){
+    document.getElementById(myarr[i]).innerHTML = 30+Math.floor(Math.random()*15)+1 ;
+	}
+for(i=14;i<19;i++){
+    document.getElementById(myarr[i]).innerHTML = 45+Math.floor(Math.random()*15)+1 ;
+	}
+for(i=19;i<myarr.length;i++){
+    document.getElementById(myarr[i]).innerHTML = 60+Math.floor(Math.random()*15)+1 ;
+	}
+for(i=0;i<myarr.length;i++){
+	document.getElementById(myarr[i]).style.color="black"; 
+	}
+}
+
+function reload(){		<!-- Reload Bingo Card  -->
+	for(i=0;i<myarr.length;i++){
+	document.getElementById(myarr[i]).innerHTML=0;
+	document.getElementById(myarr[i]).style.color="black";
+	}
+}
+
+function colorToggle(id){	<!-- Toggle the color-->
+	var element =document.getElementById(id);
+	if(element.style.color=="red")
+	{element.style.color="black";}
+	else
+	{element.style.color="red";}
+}
+
+</script>
+
+<style>
+.mystyle {
+    color:black;
+}
+
+.clearstyle{
+   color:black;
+}
+</style>
+
+
+</body>
+</html>

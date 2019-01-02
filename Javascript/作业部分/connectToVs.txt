@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>A Simple HTML Document</title>
+</head>
+<body bgcolor="#cccccc">
+<center>
+<img src="cathedral.jpg" border="2" alt="Cathedral" />
+<h1>Guide to Seville</h1>
+<h3>A brief guide to the attractions</h3>
+<table border="2">
+<tr>
+	<th bgcolor="#aaaaaa">Attraction</th>
+	<th bgcolor="#aaaaaa">Description</th>
+</tr>
+<tr>
+	<td>Cathedral</td>
+	<td>Dating back to the 15th century</td>
+</tr>
+<tr>
+	<td>Alcazar</td>
+	<td>The medieval Islamic palace</td>
+</tr>
+</table>
+<p>Enjoy your stay in beautiful Seville.</p>
+</center>
+</body>
+</html>
